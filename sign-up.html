@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Login-Page</title>
+   <title>SignUp-Page</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,11 +32,16 @@
             <div class="right d-flex direction-column align-center justify-center">
                <div class="form-wrap">
                             <div class="sec-title">
-                         <h2>Login</h2>
-                         <p>Log back in below to see your business’s financial health.</p>
+                         <h2>Create your free account</h2>
+                         <p>Create your account by filled out the following field.</p>
                    </div>
                   <form action="#">
                          <div class="contact-input">
+                                <img src="assets/images/Profile.png" alt="">
+                                <label for="email">Full Name</label>
+                                <input type="email" placeholder="Enter email address">
+                         </div>
+                            <div class="contact-input">
                                 <img src="assets/images/Message.png" alt="">
                                 <label for="email">Email</label>
                                 <input type="email" placeholder="Enter email address">
@@ -47,26 +52,29 @@
                                 <input type="Password" placeholder="Enter password">
                                 <i class="fa-solid fa-eye-slash"></i>
                          </div>
+                          <div class="contact-input password">
+                                <img src="assets/images/Lock.png" alt="">
+                                <label for="Password">Password</label>
+                                <input type="Password" placeholder="Re-type password">
+                                <i class="fa-solid fa-eye-slash"></i>
+                         </div>
                          <div class="input-cta">
                                <lebel class="checkbox-container">
                                      <input type="checkbox">
-                                     <span>remember me</span>
+                                     <span>By signing up, you agree to the <a href="#" class="green-text">terms and conditions</a></span>
                                </lebel>
-                               <div class="forget-pass">
-                                     <span><a href="#">Forgot Password ?</a></span>
-                               </div>
                          </div>
-                          <button class="form-btn">Login</button>
+                          <button class="form-btn">Sign Up</button>
                    </form>
                    <div class="social-wrap">
-                         <div class="subtitle d-flex align-center justify-center"><span>or Login with</span></div>
+                         <div class="subtitle d-flex align-center justify-center"><span>or Sign Up with</span></div>
                          <div class="social-media">
                                 <a href="#"><img src="assets/images/google.png" alt="">Google</a>
                                 <a href="#"> <img src="assets/images/facebook.png" alt="">Facebook</a>
                                 <a href="#"> <img src="assets/images/apple.png" alt="">Apple</a>
                          </div>
                          <div class="social-cta">
-                                <p>Don't have an account yet? <a href="#" class="green-text">Sign up here</a></p>
+                                <p>Already a user? <a href="#" class="green-text">Log in here</a></a></p>
                          </div>
                     </div>
                 </div>

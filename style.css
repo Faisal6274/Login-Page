@@ -16,17 +16,21 @@
 Global CSS START
 ===============================
 */
+
 body {
-	
 	font-weight: normal;
 	font-style: normal;
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
 }
+
 html, body {
 	min-height: 100%;
+	overflow-x: hidden;
+	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -56,20 +60,6 @@ a:hover,
 	text-decoration: none;
 }
 
-a,
-button {
-	color: #1696e7;
-	outline: medium none;
-}
-button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
-.uppercase {
-	text-transform: uppercase;
-}
-
-.capitalize {
-	text-transform: capitalize;
-}
-
 h1,
 h2,
 h3,
@@ -91,6 +81,7 @@ h1 {
 	font-size: 40px;
 	font-weight: 500;
 }
+
 h2 {
 	font-size: 35px;
 }
@@ -121,6 +112,11 @@ p {
 
 #page {
 	overflow: hidden;
+}
+
+.form-btn.short-btn {
+	width: 25%;
+	margin-bottom: 0;
 }
 
 /*
@@ -169,6 +165,7 @@ Global CSS END
 .sec-title {
 	margin-bottom: 40px;
 }
+
 .sec-title h1 {
   font-size: 30px;
 	font-weight: 700;
@@ -180,6 +177,7 @@ Global CSS END
   lign-items: center;
   gap: 10px;
 }
+
 .checkbox-container span {color: #79828D;}
 
 .contact-input {
@@ -277,15 +275,22 @@ Global CSS END
 }
 
 .form-btn {
-  background: #2DCC89;
-  border-radius: 10px;
-  border: none;
-  width: 100%;
-  height: 52px;
+	background: #2DCC89;
+	border-radius: 10px;
+	width: 100%;
+	height: 52px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 30px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: 0.3s all ease;
+}
+
+.form-btn:hover {
+  background: #000;
+  border-color: #DDE1E5;
   color: #fff;
-  font-size: 16px;
-  margin-bottom: 30px;
-  cursor: pointer;
 }
 
 .social-media a {
@@ -311,7 +316,7 @@ Global CSS END
 	margin-top: 30px;
 }
 
-.social-cta p a {
+.green-text {
  	color: #2DCC89;
 	font-weight: 400;
 }
@@ -328,7 +333,7 @@ Global CSS END
 
 }
  
-/* small mobile :320px. */
+/* small mobile 767px. */
 @media (max-width: 767px) {
 	
 .main-area {
@@ -346,6 +351,34 @@ Global CSS END
 .social-media a {
 	padding: 15px 18px;
 	
+}
+
+.successful-item {
+	text-align: center;
+}
+
+.sec-title h2 {
+	font-size: 28px;
+	line-height: 1;
+}
+
+}
+
+/* small mobile :320px. */
+@media (max-width: 450px) {
+
+.left, .right {
+	min-height: 55vh;
+}
+
+.form-wrap {
+	padding: 12px;
+}
+
+.social-media a {
+	padding: 12px 15px;
+	margin-right: 10px;
+	text-align: center;
 }
 
 }
